@@ -1,38 +1,92 @@
-.App {
+* {
   text-align: center;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: darksalmon;
+  margin: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header {
+  font-size: 5rem;
+  font-family: Montserrat;
+  color: deeppink;
+  margin-bottom: 1.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+p {
+  margin: 1.7rem;
+  font-family: Quicksand;
+  font-size: 1.25rem;
 }
 
-.App-link {
-  color: #61dafb;
+.input-field {
+  margin: 1rem;
+  border: 2px solid #eee;
+  box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+  border-radius: 5px;
+  text-align: left;
+  width: 200px;
+  height: 35px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.add-todo {
+  box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+  padding: 10px;
+  border: none;
+  background-color: #3f51b5;
+  font-family: Montserrat;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-todo:active {
+  transform: scale(0.98);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+.list {
+  margin: 0 auto;
+  width: 300px;
+}
+
+.list-items {
+  margin: 1.7rem;
+  border-bottom: 1px solid grey;
+  font-family: Quicksand;
+  font-size: 1.25rem;
+}
+
+.btn {
+  margin: 1rem 0.5rem 2rem 0.5rem;
+  box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+  padding: 7px;
+  border: none;
+  font-weight: 600;
+  border-radius: 5px;
+  font-family: Montserrat;
+  cursor: pointer;
+}
+
+.complete-btn {
+  background-color: greenyellow;
+  color: black;
+}
+
+.remove-btn {
+  background-color: red;
+  color: #fff;
+}
+
+.btn:active {
+  transform: scale(0.98);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
 }
