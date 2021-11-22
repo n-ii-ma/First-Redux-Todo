@@ -2,7 +2,9 @@ import { configureStore } from "@reduxjs/toolkit";
 import todoReducer from "../features/todo/todoSlice";
 
 // Get from Local Storage
-const preloadedState = JSON.parse(localStorage.getItem("reduxTodo"));
+const preloadedState = localStorage.getItem("reduxTodo")
+  ? JSON.parse(localStorage.getItem("reduxTodo"))
+  : {};
 
 // Store
 const store = configureStore({
