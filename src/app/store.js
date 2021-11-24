@@ -9,7 +9,7 @@ const preloadedState = localStorage.getItem("reduxTodo")
 // Store
 const store = configureStore({
   reducer: {
-    todoReducer,
+    todo: todoReducer,
   },
   preloadedState,
 });
