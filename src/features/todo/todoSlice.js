@@ -32,7 +32,7 @@ export const todoSlice = createSlice({
 });
 
 // Selector
-export const selectTodoSlice = (state) => state.todoReducer;
+export const selectTodoSlice = (state) => state.todo;
 
 // Actions
 export const { addTodo, toggleComplete, removeTodo } = todoSlice.actions;
